@@ -8,6 +8,7 @@
         <module>pet-clinic-web</module>
         <module>test-module</module>
         <module>test2</module>
+        <module>test3</module>
     </modules>
 
 
