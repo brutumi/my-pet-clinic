@@ -1,5 +1,5 @@
 package jovan.jakimovski.mypetclinic.model;
 
-public class Owner extends Person {
+class Owner extends Person {
 
 }
