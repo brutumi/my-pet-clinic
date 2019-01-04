@@ -5,7 +5,7 @@ import java.util.Set;
 //TYPE(OwnerService, PetService, VetService) ID (Long, Integer)
 public interface CrudService<T, ID> {
 
-    Set<T> findAll();
+    public Set<T> findAll();
 
     T findById(ID id);
 
