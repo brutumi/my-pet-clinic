@@ -1,12 +1,12 @@
 package jovan.jakimovski.mypetclinic.services.map;
 
 import jovan.jakimovski.mypetclinic.model.Vet;
-import jovan.jakimovski.mypetclinic.services.CrudService;
+import jovan.jakimovski.mypetclinic.services.VetService;
 
 import java.util.Set;
 
 //implements CrudService - po default because that's where the crud methods definitions are... and we are just inheriting that methods from the AbstractMapService
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet,Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
     @Override
     public Set<Vet> findAll() {

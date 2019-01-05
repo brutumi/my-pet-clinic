@@ -1,12 +1,12 @@
 package jovan.jakimovski.mypetclinic.services.map;
 
 import jovan.jakimovski.mypetclinic.model.Owner;
-import jovan.jakimovski.mypetclinic.services.CrudService;
+import jovan.jakimovski.mypetclinic.services.OwnerService;
 
 import java.util.Set;
 
 //implements CrudService - po default because that's where the crud methods definitions are... and we are just inheriting that methods from the AbstractMapService
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -31,5 +31,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
