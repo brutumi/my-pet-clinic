@@ -6,7 +6,24 @@
 </head>
 <body>
 
-<h1 th:text="'Vet Index Page'">Index Page</h1>
+    <h1 th:text="'Vet Index Page'">List Vets here</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="vet : ${vets}">
+            <th th:text="${vet.id}"1></th>
+            <th th:text="${vet.firstName}">Joe</th>
+            <th th:text="${vet.lastName}">Blue</th>
+        </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
