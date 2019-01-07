@@ -1,2 +1,2 @@
 # my-pet-clinic
-My pet clinic
+spring5 learning project
