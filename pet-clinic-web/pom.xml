@@ -5,6 +5,7 @@
         <groupId>jovan.jakimovski</groupId>
         <version>0.0.2-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pet-clinic-web</artifactId>
@@ -22,7 +23,9 @@
             <artifactId>pet-clinic-data</artifactId>
             <groupId>jovan.jakimovski</groupId>
             <version>0.0.2-SNAPSHOT</version>
+            <!--<scope>import</scope>-->
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -41,6 +44,7 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- webjars -->
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>webjars-locator-core</artifactId>
@@ -60,6 +64,8 @@
             <artifactId>bootstrap</artifactId>
             <version>${webjars-bootstrap.version}</version>
         </dependency>
+        <!-- end of webjars -->
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -95,14 +101,10 @@
                         <artifactId>bootstrap</artifactId>
                         <version>${webjars-bootstrap.version}</version>
                     </dependency>
-                    <dependency>
-                        <groupId>org.mockito</groupId>
-                        <artifactId>mockito-core</artifactId>
-                        <version>${mockito.version}</version>
-                    </dependency>
                 </dependencies>
             </plugin>
         </plugins>
     </build>
+
 
 </project>
