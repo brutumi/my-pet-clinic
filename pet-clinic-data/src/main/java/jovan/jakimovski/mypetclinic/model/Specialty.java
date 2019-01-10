@@ -1,6 +1,6 @@
 package jovan.jakimovski.mypetclinic.model;
 
-public class Speciality extends BaseEnitity {
+public class Specialty extends BaseEnitity {
 
     private String description;
 
