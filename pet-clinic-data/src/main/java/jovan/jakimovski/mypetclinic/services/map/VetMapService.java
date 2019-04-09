@@ -4,12 +4,14 @@ import jovan.jakimovski.mypetclinic.model.Specialty;
 import jovan.jakimovski.mypetclinic.model.Vet;
 import jovan.jakimovski.mypetclinic.services.SpecialtyService;
 import jovan.jakimovski.mypetclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 //implements CrudService - po default because that's where the crud methods definitions are... and we are just inheriting that methods from the AbstractMapService
 @Service
+@Profile({"default", "map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService{
 
     SpecialtyService specialtyService;
