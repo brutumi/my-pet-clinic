@@ -3,10 +3,11 @@ package jovan.jakimovski.mypetclinic.services.map;
 import com.sun.javafx.scene.control.skin.TableHeaderRow;
 import jovan.jakimovski.mypetclinic.model.Visit;
 import jovan.jakimovski.mypetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
     @Override
     public Set<Visit> findAll() {
