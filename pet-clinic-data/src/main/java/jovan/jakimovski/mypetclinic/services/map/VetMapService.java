@@ -10,11 +10,11 @@ import java.util.Set;
 
 //implements CrudService - po default because that's where the crud methods definitions are... and we are just inheriting that methods from the AbstractMapService
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService{
 
     SpecialtyService specialtyService;
 
-    public VetServiceMap(SpecialtyService specialtyService) {
+    public VetMapService(SpecialtyService specialtyService) {
         this.specialtyService = specialtyService;
     }
 
