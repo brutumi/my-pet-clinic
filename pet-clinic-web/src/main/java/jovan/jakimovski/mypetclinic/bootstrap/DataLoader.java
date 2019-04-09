@@ -35,6 +35,10 @@ public class DataLoader implements CommandLineRunner {
     }
 
     private void loadData() {
+
+        //BUILDER PATTERN
+        Owner.builder().firstName("adda").lastName("").build();
+
         PetType dog = new PetType();
         dog.setName("Dog");
         PetType savedDogPetType = petTypeService.save(dog);
